@@ -39,3 +39,12 @@ Value: {{ miFormulario.value | json }}
 <pre>
 Valid: {{ miFormulario.valid }}
 </pre>
+
+<div class="row mt-5">
+  <div class="col">
+    <!-- "*" vale para mandar todo la etiqueta -->
+    <div class="alert alert-primary" *customIf="miFormulario.valid">
+      Todo OK!!
+    </div>
+  </div>
+</div>
